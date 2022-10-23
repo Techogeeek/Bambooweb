@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="icon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Welcome to Our Project Section
+        </title>
+    </head>
+    <body>
+      
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+          
+
+            <!--==================== ABOUT ====================-->
+       
+            
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Discover the Products <br> That Changed The Sector Of Bamboo And Cane</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="furniture.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Furniture</h2>
+                                <span class="discover__description">Occupy No.1 Position In Market</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="inno4.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Bamboo Flooring</h2>
+                                <span class="discover__description">Occupy No.2 Position In Market</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="roof.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Bamboo Roofs</h2>
+                                <span class="discover__description">Occupy No.3 Position In Market</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="bambrush.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Tooth Brushes</h2>
+                                <span class="discover__description">Occupy No.4 Position In Market</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== EXPERIENCE ====================-->
+            <section class="experience section">
+                <h2 class="section__title">Some Stats Related to <br> The Cane And Bamboo Sector</h2>
+
+                <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">4.6 million Tonnes</h2>
+                            <span class="experience__description">Annual Production <br> Of Bmaboo In India</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">3,61,791 Ha</h2>
+                            <span class="experience__description">Of Land Cultivated <br> Since 2006-2007</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">40,000</h2>
+                            <span class="experience__description">Farmers Are Taking Up  <br> Bamboo Cultivation Every Year</span>
+                        </div>
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="Stats1.jpg" alt="" class="experience__img-one">
+                        </div>
+                        
+                        <div class="experience__overlay">
+                            <img src="stats2.jpg" alt="" class="experience__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!--==================== ChatBot ====================-->
+             
+             <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Chat Bot</title>
+            
+                <link rel="stylesheet" href="static/css/chat.css">
+                <link rel="stylesheet" href="static/css/home.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            
+            </head>
+            
+            <body>
+                <!-- CHAT BAR BLOCK -->
+                <div class="chat-bar-collapsible">
+                    <button id="chat-button" type="button" class="collapsible">Chat with us!
+                        <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+                    </button>
+            
+                    <div class="content">
+                        <div class="full-chat-block">
+                            <!-- Message Container -->
+                            <div class="outer-container">
+                                <div class="chat-container">
+                                    <!-- Messages -->
+                                    <div id="chatbox">
+                                        <h5 id="chat-timestamp"></h5>
+                                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                                    </div>
+            
+                                    <!-- User input box -->
+                                    <div class="chat-bar-input-block">
+                                        <div id="userInput">
+                                            <input id="textInput" class="input-box" type="text" name="msg"
+                                                placeholder="Tap 'Enter' to send a message">
+                                            <p></p>
+                                        </div>
+            
+                                        <div class="chat-bar-icons">
+                                            <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                                onclick="heartButton()"></i>
+                                            <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                                onclick="sendButton()"></i>
+                                        </div>
+                                    </div>
+            
+                                    <div id="chat-bar-bottom">
+                                        <p></p>
+                                    </div>
+            
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+            
+                </div>
+            
+            </body>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="static/scripts/responses.js"></script>
+            <script src="static/scripts/chat.js"></script>
+            
+
+            <!--==================== PLACES ====================-->
+            <section class="place section" id="place">
+                <h2 class="section__title">Machineries Involved In The Sector</h2>
+
+                <div class="place__container container grid">
+                    <!--==================== PLACES CARD 1 ====================-->
+                    <div class="place__card">
+                        <img src="mech1.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Square Stick Making Machine</h3>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!--==================== PLACES CARD 2 ====================-->
+                    <div class="place__card">
+                        <img src="mech2.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">External Knot Removing Machine</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--==================== PLACES CARD 3 ====================-->
+                    <div class="place__card">
+                        <img src="mech3.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Bamboo Cutting Machines</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--==================== PLACES CARD 4 ====================-->
+                    <div class="place__card">
+                        <img src="4mech.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                            
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Bamboo Slicer Machine</h3>
+                            </div>
+                        </div>
+
+            
+                    </div>
+
+                    <!--==================== PLACES CARD 5 ====================-->
+                    <div class="place__card">
+                        <img src="5mech.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Bamboo Splitting Machine</h3>
+                            </div>
+                        </div>
+
+        
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SUBSCRIBE ====================-->
+         
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">NECBDC</h3>
+                        <p class="footer__description">NECBDC would be an exclusive initiative<br> focusing on comprehensive development of bamboo sector
+                         <br> through cross sectoral and multi-disciplinary approach. 
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Features</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">New & Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Company</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Team</a>
+                            </li>
+                        
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Join Our Portal</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Support</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">FAQs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Support Center</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2021 NECBDC. All rigths reserved.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
