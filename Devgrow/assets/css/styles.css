@@ -123,8 +123,9 @@ body {
   color: var(--text-color);
 }
 
+
 h1, h2, h3 {
-  color: var(--title-color);
+  color: rgb(1, 255, 192);
   font-weight: var(--font-semi-bold);
   font-family: var(--title-font);
 }
@@ -169,7 +170,7 @@ input {
 
 .section__title {
   font-size: var(--h2-font-size);
-  color: var(--title-color);
+  color: white;
   text-align: center;
   text-transform: capitalize;
   margin-bottom: var(--mb-2);
@@ -193,7 +194,8 @@ input {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: transparent;
+  background-color: rgba(10, 90, 41, 0.836);
+  border-bottom: 2px white solid;
 }
 
 /*=============== NAV ===============*/
@@ -266,14 +268,17 @@ input {
 }
 
 /* Change background header */
-.scroll-header {
-  background-color: var(--body-color);
-  box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+  .scroll-header {
+    background-color: hsl(146deg 80% 14%);
+    box-shadow: 0 0 4px rgb(14 55 63 / 15%);
+    border-bottom: 1px white solid;
+    border-top: 1px white solid;
 }
+
 
 .scroll-header .nav__logo,
 .scroll-header .nav__toggle {
-  color: var(--title-color);
+  color: white;
 }
 
 /* Active link */
@@ -321,12 +326,14 @@ input {
   display: block;
   font-weight: var(--font-semi-bold);
   margin-bottom: var(--mb-0-75);
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 
 .home__data-title {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
+  text-shadow: 2px 2px 3px rgba(88, 88, 88, 1);
 }
 
 .home__social {
@@ -416,6 +423,7 @@ input {
 
 .about__description {
   margin-bottom: var(--mb-2);
+  color: rgb(233, 231, 231);
 }
 
 .about__img {
@@ -463,6 +471,7 @@ input {
 .discover__title, 
 .discover__description {
   color: var(--white-color);
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 
 .discover__title {
@@ -477,10 +486,12 @@ input {
 
 .discover__img {
   transition: var(--img-transition);
+  border-radius: 15px;
 }
 
 .discover__img:hover {
   transform: var(--img-scale);
+  border-radius: 15px;
 }
 
 .swiper-container-3d .swiper-slide-shadow-left,
@@ -510,6 +521,7 @@ input {
 
 .experience__description {
   font-size: var(--small-font-size);
+  color: white;
 }
 
 .experience__img {
@@ -520,11 +532,13 @@ input {
 .experience__img-one, 
 .experience__img-two {
   transition: var(--img-transition);
+  border-radius: 15px;
 }
 
 .experience__img-one:hover, 
 .experience__img-two:hover {
   transform: var(--img-scale);
+  border-radius: 15px;
 }
 
 .experience__overlay {
@@ -775,10 +789,12 @@ body {
 
 .place__img {
   transition: var(--img-transition);
+  border-radius: 15px;
 }
 
 .place__content, .place__title {
   color: var(--white-color);
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 
 .place__content {
@@ -881,6 +897,11 @@ body {
 }
 
 /*=============== FOOTER ===============*/
+
+footer{
+  background-color: rgb(14, 22, 22);
+}
+
 .footer__container {
   row-gap: 5rem;
 }
@@ -901,6 +922,7 @@ body {
 
 .footer__description {
   margin-bottom: var(--mb-2);
+  color: white;
 }
 
 .footer__social {
@@ -918,11 +940,11 @@ body {
 }
 
 .footer__link {
-  color: var(--text-color);
+  color: rgb(0, 195, 255);
 }
 
 .footer__link:hover {
-  color: var(--title-color);
+  color: rgb(72, 255, 0);
 }
 
 .footer__rights {
@@ -1012,6 +1034,7 @@ body {
   .experience__img,
   .video__container {
     padding: 0;
+    border-radius: 15px;
   }
 }
 
@@ -1069,10 +1092,10 @@ body {
     background-color: var(--white-color);
   }
   .scroll-header .nav__link {
-    color: var(--text-color);
+    color: white;
   }
   .scroll-header .active-link {
-    color: var(--title-color);
+    color: rgb(51, 255, 0);
   }
   .scroll-header .active-link::before {
     background-color: var(--title-color);
@@ -1150,6 +1173,7 @@ body {
   .container {
     margin-left: auto;
     margin-right: auto;
+    border-radius: 15px;
   }
   .home__container {
     grid-template-rows: 2fr .5fr;
@@ -1183,6 +1207,7 @@ body {
   }
   .discover__title {
     font-size: var(--h2-font-size);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
   }
   .experience__content {
     margin: var(--mb-1) 0;
